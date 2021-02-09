@@ -6,6 +6,7 @@
   "rules": {
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-misused-promises": "off",
     "@typescript-eslint/camelcase": "off",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "off"
