@@ -4,6 +4,12 @@
     "module": "commonjs",
     "target": "ES2019",
     "esModuleInterop": true,
-    "allowJs": true
+    "allowJs": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": [
+        "*"
+      ]
+    }
   }
 }
