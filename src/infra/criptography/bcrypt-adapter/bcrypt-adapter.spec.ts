@@ -58,6 +58,8 @@ describe('Bcrypt Adapter', () => {
     expect(isValid).toBe(false)
   })
 
+  // TODO: continue 13.2
+
   test('Should throw if compare throws', async () => {
     const sut = makeSut()
     jest.spyOn(bcrypt, 'compare').mockReturnValueOnce(Promise.reject(new Error()))
