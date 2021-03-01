@@ -4,6 +4,7 @@
     "module": "commonjs",
     "target": "ES2019",
     "esModuleInterop": true,
+    "sourceMap": true,
     "baseUrl": "src",
     "paths": {
       "@/*": [

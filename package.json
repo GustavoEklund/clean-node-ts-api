@@ -1,11 +1,16 @@
 {
   "name": "clean-node-api",
   "version": "1.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "NodeJs Rest API using TDD, Clean Architecture and Typescript",
+  "author": "Gustavo Eklund <gustavo04616@gmail.com>",
+  "license": "ISC",
+  "keywords": [],
+  "repository": "github:GustavoEklund/clean-node-typescript-api",
+  "main": "./dist/main/index.js",
   "scripts": {
-    "start": "node --trace-warnings dist/main/server.js",
+    "start": "node --trace-warnings ./dist/main/server.js",
     "build": "rimraf ./dist && tsc",
+    "debug": "node --trace-warnings --inspect=0.0.0.0:9222 --nolazy ./dist/main/server.js",
     "up": "npm run build && docker-compose up -d",
     "down": "docker-compose down",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
@@ -15,9 +20,6 @@
     "test:staged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.2.3",
     "@types/bcrypt": "^3.0.0",
