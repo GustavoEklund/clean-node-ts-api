@@ -3,5 +3,6 @@ dist
 .vscode
 .idea
 data
+!src/data
 coverage
 globalConfig.json

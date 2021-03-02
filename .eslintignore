@@ -1,6 +1,6 @@
 .idea
 .vscode
-data
+./data
 dist
 coverage
 node_modules
